@@ -24,16 +24,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          bun-version: latest
+          node-version: 20
           
       - name: Install dependencies
-        run: bun install
+        run: npm ci
         
       - name: Build project
-        run: bun run build
+        # Many TanStack static builds expect the VITE_ prefixed environment variables 
+        # or a specific build command. We'll stick to the standard build.
+        run: npm run build
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -41,8 +43,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Most Vite projects output to 'dist'. 
-          path: './dist' 
+          # If it's a standard TanStack/Nitro static build, it usually outputs here:
+          path: './.output/public' 
           
       - name: Deploy to GitHub Pages
         id: deployment
