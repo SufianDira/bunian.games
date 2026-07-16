@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunian Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3ecee1bfbe.js" crossorigin="anonymous"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <div class="fixed-cityscape">
+        <div class="building-group building-group-1">
+            <div class="building building-1"></div>
+            <div class="building building-2"></div>
+            <div class="building building-3"></div>
+        </div>
+        <div class="building-group building-group-2">
+            <div class="spire-antenna"></div>
+            <div class="spire-body"></div>
+        </div>
+        <div class="building-group building-group-3">
+            <div class="building building-1"></div>
+            <div class="building building-2"></div>
+            <div class="building building-3"></div>
+        </div>
+        <div class="building-group building-group-4">
+            <div class="building building-1"></div>
+            <div class="building building-2"></div>
+        </div>
+        <div class="building-group building-group-5">
+            <div class="building building-1"></div>
+            <div class="building building-2"></div>
+            <div class="building building-3"></div>
+            <div class="building building-4"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="Assets/Logo.png" alt="Logo" width="35" class="d-inline-block mb-2 me-2">
+            Bunian Games
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+
+        <div class="navbar-nav ms-auto column-gap-4">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#games">Games</a>
+            <a class="nav-link" href="#team">Team</a>
+            <a class="nav-link" href="#connect">Connect</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <section id="title">
+        <div class="margin">
+            <img src="Assets/Logo.png" alt="Bunian Games Logo" width="150">
+        </div>
+        <h1 class="fw-bold margin">Bunian Games</h1>
+    </section>
+
+    <section id="about">
+        <div class="section-label margin">
+            <i class="fa-solid fa-circle-info"></i>
+            About
+        </div>
+        <h4 class="col-lg-4 margin">
+            Bunian (pronounced <span class="fst-italic">boon-yaan</span>) is Arabic for architecture. We are a two-person independent game development studio based in Jordan, specializing in programming and logic-puzzle video games.
+        </h4>
+    </section>
+
+    <section id="games">
+        <div class="section-label margin">
+            <i class="fa-solid fa-gamepad"></i>
+            Games
+        </div>
+
+        <div class="container col-lg-8">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7">
+                    <div class="section-label margin">Current Project</div>
+                    <h1 class="fw-bold margin">CPU: Computing Potatoes Unlimited</h1>
+                    <p class="game-description margin">
+                        Process numbers in a factory that mimics a processor. Punch in simple instructions to command potato workers. Optimize solutions for challenging open-ended puzzles. No prior experience required. Punch, observe, learn, repeat.
+                    </p>
+                    <div class="fst-italic fs-4 margin">Coming Soon</div>
+                </div>
+
+                <div class="col-lg-5 text-center mt-4">
+                    <img class="img-fluid game-image" src="Assets/CPU.png" alt="CPU: Computing Potatoes Unlimited Cover Art">
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-5 text-center mt-4">
+                    <img class="img-fluid game-image" src="Assets/Decodation.png" alt="Decodation Cover Art">
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="section-label margin">Mini Game</div>
+                    <h1 class="fw-bold margin">Decodation</h1>
+                    <p class="game-description margin">
+                        Decrypt code segments to reverse engineer programs and uncover their output. Programming experience required.
+                    </p>
+                    <a class="fst-italic fs-4 margin" href="#" target="_blank">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="section-label margin">
+            <i class="fa-solid fa-users"></i>
+            Our Team
+        </div>
+        <div class="col-lg-5 margin d-flex flex-row justify-content-between text-center">
+            <div>
+                <img class="team-photo" src="Assets/Sufian.png" alt="Sufian Diraneyya Portrait">
+                <h3 class="fw-bold mt-4">Sufian Diraneyya</h3>
+                <p class="member-role">Game Design & Programming</p>
+                <a href="https://www.linkedin.com/in/sufiandira/" target="_blank">Linkedin</a>
+            </div>
+
+            <div>
+                <img class="team-photo" src="Assets/Kinan.png" alt="Kinan Diraneyya Portrait">
+                <h3 class="fw-bold mt-4">Kinan Diraneyya</h3>
+                <p class="member-role">Art, Animation, Programming, and Level Design</p>
+                <a href="https://www.linkedin.com/in/kinan-diraneyya/" target="_blank">Linkedin</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect">
+        <div class="section-label margin">
+            <i class="fa-solid fa-bell"></i>
+            Stay Updated
+        </div>
+        <h4 class="col-lg-4 margin text-center">
+            Join our mailing list to be the first to know when CPU: Computing Potatoes Unlimited is officially announced.
+        </h4>
+        <button class="margin">subscribe</button>
+    </section>
+
+    <section id="contact">
+        <div class="section-label margin">
+            <i class="fa-solid fa-envelope"></i>
+            Contact Us
+        </div>
+        <h5 class="col-lg-4 text-center margin">
+            For inquiries, feedback, or just to say hello, drop us a line at:
+        </h5>
+        <a class="fw-bold fs-3 margin" href="mailto:info@bunian.games" target="_blank">
+            info@bunian.games
+        </a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center column-gap-5">
+                <a href="#" target="_blank">X / Twitter</a>
+                <a href="#" target="_blank">Youtube</a>
+            </div>
+
+            <div class="text-center mt-5">
+                <p id="copyright">© 2026 Bunian Games</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

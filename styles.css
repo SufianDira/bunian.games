@@ -1,0 +1,235 @@
+:root {
+  --primary-bg-color: #080e14;
+  --primary-color: #fcfa29;
+  --primary-color-rgb: 252, 250, 41;
+  --navbar-height: 80px;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(Assets/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(Assets/Nunito-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: RobotoMono;
+  src: url(Assets/RobotoMono-Bold.ttf);
+  font-weight: bold;
+}
+
+html {
+  scroll-padding-top: var(--navbar-height);
+}
+
+body {
+  font-family: Nunito;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.navbar-custom {
+  background-color: var(--primary-bg-color);
+  border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.2);
+  height: 80px;
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--primary-color);
+  font-family: RobotoMono;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: var(--primary-color);
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-family: RobotoMono;
+}
+
+.navbar-custom .navbar-nav .nav-link.active {
+  opacity: 1;
+}
+
+section {
+  margin: 1.5rem 0.75rem;
+  min-height: 60vh;
+  border-bottom: 1px solid rgba(var(--primary-color-rgb), 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section .margin {
+  margin: 1.5rem;
+}
+
+#title {
+  margin-top: var(--navbar-height);
+}
+
+.section-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+
+.member-role {
+  opacity: 0.75;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--primary-bg-color);
+  border: none;
+  padding: 15px 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background-color: transparent;
+  color: var(--primary-color);
+  outline: 2px solid var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.75;
+}
+
+footer {
+  padding: 3rem;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+footer a:hover,
+footer a:focus {
+  opacity: 0.75;
+}
+
+#copyright {
+  opacity: 0.75;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.fixed-cityscape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.building-group {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.building-group div {
+  background-color: rgba(var(--primary-color-rgb), 0.05);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.building-group-1 {
+  left: 3%;
+  width: 17vw;
+}
+.building-group-1 .building-1 { width: 30%; height: 18vh; }
+.building-group-1 .building-2 { width: 45%; height: 23vh; }
+.building-group-1 .building-3 { width: 25%; height: 14vh; }
+
+.building-group-2 {
+  left: 22%;
+  width: 5.5vw;
+  flex-direction: column;
+  align-items: center;
+}
+.building-group-2 .spire-body {
+  width: 100%;
+  height: 38vh;
+}
+.building-group-2 .spire-antenna {
+  width: 3px;
+  height: 8vh;
+  border-radius: 0;
+  background-color: rgba(var(--primary-color-rgb), 0.05);
+}
+
+.building-group-3 {
+  left: 32%;
+  width: 18vw;
+}
+.building-group-3 .building-1 { width: 32%; height: 20vh; }
+.building-group-3 .building-2 { width: 40%; height: 28vh; }
+.building-group-3 .building-3 { width: 28%; height: 17vh; }
+
+.building-group-4 {
+  left: 55%;
+  width: 13vw;
+}
+.building-group-4 .building-1 { width: 46%; height: 32vh; }
+.building-group-4 .building-2 { width: 54%; height: 26vh; }
+
+.building-group-5 {
+  left: 72%;
+  width: 23vw;
+}
+.building-group-5 .building-1 { width: 24%; height: 18vh; }
+.building-group-5 .building-2 { width: 28%; height: 23vh; }
+.building-group-5 .building-3 { width: 24%; height: 15vh; }
+.building-group-5 .building-4 { width: 24%; height: 19vh; }
+
+#game .game-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.game-image {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.team-photo {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 2px;
+}
