@@ -89,7 +89,7 @@ section .margin {
   opacity: 0.75;
 }
 
-button {
+.button {
   background-color: var(--primary-color);
   color: var(--primary-bg-color);
   border: none;
@@ -100,8 +100,8 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
   background-color: transparent;
   color: var(--primary-color);
   outline: 2px solid var(--primary-color);
