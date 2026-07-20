@@ -24,6 +24,7 @@
 
 html {
   scroll-padding-top: var(--navbar-height);
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -233,4 +234,26 @@ footer a:focus {
   height: 240px;
   object-fit: cover;
   border-radius: 2px;
+}
+
+@media (min-width: 992px) {
+  #team-members {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 991px) {
+  #team-members {
+    flex-direction: column;
+  }
+
+  #cpu-game {
+    flex-direction: column-reverse;
+  }
+
+  .navbar-collapse {
+    background-color: var(--primary-bg-color);
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
 }
