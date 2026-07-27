@@ -257,3 +257,9 @@ footer a:focus {
     border-radius: 0 0 8px 8px;
   }
 }
+
+.youtube {
+  width: 100%;
+  max-width: 458px;
+  aspect-ratio: 9 / 16;
+}
