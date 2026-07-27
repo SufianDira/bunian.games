@@ -7,19 +7,22 @@
 
 @font-face {
   font-family: Nunito;
-  src: url(Assets/Nunito-Regular.ttf);
+  src: url('Assets/Nunito-Regular.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
   font-family: Nunito;
-  src: url(Assets/Nunito-Bold.ttf);
+  src: url('Assets/Nunito-Bold.woff2') format('woff2');
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
   font-family: RobotoMono;
-  src: url(Assets/RobotoMono-Bold.ttf);
+  src: url('Assets/RobotoMono-Bold.woff2') format('woff2');
   font-weight: bold;
+  font-display: swap;
 }
 
 html {
